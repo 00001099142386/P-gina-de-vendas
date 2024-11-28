@@ -132,7 +132,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px hwb(296 64% 7% / 0.1);
 }
 
 .categoria-imagem img {

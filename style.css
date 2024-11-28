@@ -35,7 +35,7 @@ header h1 {
 }
 
 #abrirCarrinho {
-    background-color: #4CAF50;
+    background-color: #hwb(277 32% 22%);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -44,7 +44,7 @@ header h1 {
 }
 
 #abrirCarrinho:hover {
-    background-color: #45a049;
+    background-color: #hwb(277 32% 22%);
 }
 
 .produtos {

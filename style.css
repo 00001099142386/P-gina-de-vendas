@@ -35,7 +35,7 @@ header h1 {
 }
 
 #abrirCarrinho {
-    background-color: #e1abf6
+    background-color: #e1abf6;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -44,7 +44,7 @@ header h1 {
 }
 
 #abrirCarrinho:hover {
-    background-color: #e1abf6
+    background-color: #e1abf6;
 }
 
 .produtos {
@@ -82,7 +82,7 @@ header h1 {
 }
 
 .adicionarCarrinho {
-    background-color: #e1abf6
+    background-color: #e1abf6;
     color: white;
     border: none;
     padding: 10px;
@@ -91,7 +91,7 @@ header h1 {
 }
 
 .adicionarCarrinho:hover {
-    background-color: #e1abf6
+    background-color: #e1abf6;
 }
 
 /* Estilos do carrinho */

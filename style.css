@@ -82,7 +82,7 @@ header h1 {
 }
 
 .adicionarCarrinho {
-    background-color: #4CAF50;
+    background-color: hwb(277 32% 22%);
     color: white;
     border: none;
     padding: 10px;
@@ -91,7 +91,7 @@ header h1 {
 }
 
 .adicionarCarrinho:hover {
-    background-color: #45a049;
+    background-color: #hwb(277 32% 22%);
 }
 
 /* Estilos do carrinho */

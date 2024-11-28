@@ -18,7 +18,7 @@ header {
 
 header h1 {
     font-size: 2em;
-    color: #4CAF50;
+    color: #ac38cf;
 }
 
 /* Barra de pesquisa */
@@ -35,7 +35,7 @@ header h1 {
 }
 
 #abrirCarrinho {
-    background-color: aqua
+    background-color: #e1abf6
     color: white;
     border: none;
     padding: 10px 20px;
@@ -44,7 +44,7 @@ header h1 {
 }
 
 #abrirCarrinho:hover {
-    background-color: aqua
+    background-color: #e1abf6
 }
 
 .produtos {
@@ -82,7 +82,7 @@ header h1 {
 }
 
 .adicionarCarrinho {
-    background-color: aqua
+    background-color: #e1abf6
     color: white;
     border: none;
     padding: 10px;
@@ -91,7 +91,7 @@ header h1 {
 }
 
 .adicionarCarrinho:hover {
-    background-color: aqua
+    background-color: #e1abf6
 }
 
 /* Estilos do carrinho */
@@ -127,7 +127,7 @@ header h1 {
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #e1b3f1;
+    background-color: #e1b3f6;
     display: flex;
     align-items: center;
     justify-content: center;

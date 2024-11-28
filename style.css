@@ -1,3 +1,4 @@
+/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,13 +11,15 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .produtos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas */
-    gap: 20px; /* Espaçamento entre os itens */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
@@ -28,7 +31,6 @@ header {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .produto img {
     max-width: 100%;
@@ -45,19 +47,45 @@ header {
     margin: 5px 0;
 }
 
-.preco {
-    font-size: 1.1em;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #333;
+.adicionarCarrinho {
+    background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
+.adicionarCarrinho:hover {
+    background-color: #45a049;
+}
+
+#carrinho {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho h2 {
+    margin-top: 0;
+}
+
+#fecharCarrinho {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#fecharCarrinho:hover {
+    background-color: darkred;
+}

@@ -13,11 +13,25 @@ body {
 header {
     text-align: center;
     margin: 20px 0;
+    position: relative;
 }
 
 header h1 {
     font-size: 2em;
     color: #4CAF50;
+}
+
+/* Barra de pesquisa */
+.barraPesquisa {
+    margin: 15px 0;
+}
+
+#pesquisa {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #abrirCarrinho {
@@ -35,9 +49,9 @@ header h1 {
 
 .produtos {
     display: flex;
-    flex-direction: column;
-    gap: 20px; /* Espaçamento entre os itens */
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .produto {
@@ -47,15 +61,17 @@ header h1 {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Largura fixa para os produtos */
+    width: 300px;
 }
 
 .produto img {
+
+
+
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
 .produto h2 {
     font-size: 1.2em;
     margin: 10px 0;
@@ -122,3 +138,4 @@ footer {
 footer p {
     margin: 0;
 }
+

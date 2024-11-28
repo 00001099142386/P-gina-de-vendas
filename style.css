@@ -35,7 +35,7 @@ header h1 {
 }
 
 #abrirCarrinho {
-    background-color: #hwb(277 32% 22%);
+    background-color: aqua
     color: white;
     border: none;
     padding: 10px 20px;
@@ -44,7 +44,7 @@ header h1 {
 }
 
 #abrirCarrinho:hover {
-    background-color: #hwb(277 32% 22%);
+    background-color: aqua
 }
 
 .produtos {
@@ -82,7 +82,7 @@ header h1 {
 }
 
 .adicionarCarrinho {
-    background-color: hwb(277 32% 22%);
+    background-color: aqua
     color: white;
     border: none;
     padding: 10px;

@@ -49,3 +49,44 @@ document.getElementById('abrirCarrinho').addEventListener('click', function() {
     alert("Carrinho de compras:\n" + carrinho.map(item => `${item.nome} - R$${item.preco} x ${item.quantidade}`).join('\n'));
 });
 
+// Variável para favoritos
+let favoritos = [];
+
+// Função para adicionar aos favoritos
+document.querySelectorAll('.favoritar').forEach(button => {
+    button.addEventListener('click', function() {
+        const produto = this.closest('.produto');
+        const nome = produto.getAttribute('data-nome');
+        const preco = parseFloat(produto.getAttribute('data-preco'));
+
+        // Verifica se o produto já está nos favoritos
+        const favoritoExistente = favoritos.find(item => item.nome === nome);
+        if (!favoritoExistente) {
+            favoritos.push({ nome, preco });
+            alert(`${nome} foi adicionado aos favoritos!`);
+        } else {
+            alert(`${nome} já está nos favoritos.`);
+        }
+    });
+});
+
+// Abrir lista de favoritos
+document.getElementById('abrirFavoritos').addEventListener('click', function() {
+    if (favoritos.length === 0) {
+        alert("Nenhum item nos favoritos.");
+    } else {
+        alert("Favoritos:\n" + favoritos.map(item => `${item.nome} - R$${item.preco}`).join('\n'));
+    }
+});
+
+// Comprar agora
+document.querySelectorAll('.comprarAgora').forEach(button => {
+    button.addEventListener('click', function() {
+        const produto = this.closest('.produto');
+        const nome = produto.getAttribute('data-nome');
+        const preco = parseFloat(produto.getAttribute('data-preco'));
+        alert(`Você comprou ${nome} por R$${preco.toFixed(2)}!`);
+    });
+});
+
+

@@ -166,6 +166,37 @@ header h1 {
     background-color: darkred;
 }
 
+.comprarAgora {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.comprarAgora:hover {
+    background-color: #ff4f3f;
+}
+
+.favoritar {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #ff6f61;
+}
+
+#abrirFavoritos {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ff6f61;
+}
+
 /* Rodapé */
 footer {
     margin-top: auto;

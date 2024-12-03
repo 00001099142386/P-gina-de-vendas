@@ -13,8 +13,23 @@
             <input type="text" id="pesquisa" placeholder="Pesquisar produtos...">
         </div>
         <button id="abrirCarrinho">🛒 Carrinho (<span id="quantidadeItens">0</span>)</button>
-        
+        <button id="abrirFavoritos">❤️ Favoritos</button>
     </header>
+    <main>
+        <div class="produtos">
+            <!-- Produto exemplo -->
+            <div class="produto" data-categoria="sapatos" data-nome="Tênis Casual" data-preco="150">
+                <img src="download (1).jpeg" alt="Tênis Casual">
+                <h2>Tênis Casual</h2>
+                <p>Conforto e estilo para o dia a dia.</p>
+                <p class="preco">R$150,00</p>
+                <button class="adicionarCarrinho">Adicionar ao Carrinho</button>
+                <button class="comprarAgora">Comprar Agora</button>
+                <button class="favoritar">❤️</button>
+            </div>
+            <!-- Repita para os demais produtos -->
+        </div>
+    </main>
 
     <!-- Categorias -->
     <section class="categorias">

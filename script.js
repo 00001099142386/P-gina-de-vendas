@@ -77,6 +77,19 @@ document.querySelectorAll('.adicionarCarrinho').forEach(button => {
     });
 });
 
+// Comprar Agora com redirecionamento
+document.querySelectorAll('.comprarAgora').forEach(button => {
+    button.addEventListener('click', function () {
+        const produto = this.closest('.produto');
+        const categoria = produto.getAttribute('data-categoria');
+        
+        // Redirecionar para a página correspondente
+        const url = `https://www.seusite.com/${categoria}`;
+        window.location.href = url;
+    });
+});
+
+
 // Função para pesquisar produtos
 document.getElementById('pesquisa').addEventListener('input', function() {
     const termoPesquisa = this.value.toLowerCase();

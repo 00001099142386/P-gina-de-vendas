@@ -78,7 +78,7 @@ header h1 {
     margin: 5px 0;
 }
 
-.adicionarCarrinho, .comprarAgora, .favoritar {
+.adicionarCarrinho, .comprarAgora {
     background-color: #e1abf6;
     color: white;
     border: none;
@@ -88,7 +88,7 @@ header h1 {
     margin-top: 10px;
 }
 
-.adicionarCarrinho:hover, .comprarAgora:hover, .favoritar:hover {
+.adicionarCarrinho:hover, .comprarAgora:hover {
     background-color: #e1abf6;
 }
 
@@ -132,7 +132,6 @@ header h1 {
     padding-bottom: 5px;
 }
 
-/* Categorias */
 .categorias {
     display: flex;
     justify-content: center;
@@ -204,24 +203,6 @@ header h1 {
     background-color: #ff4f3f;
 }
 
-.favoritar {
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-top: 5px;
-    color: #ff6f61;
-}
-
-#abrirFavoritos {
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #ff6f61;
-}
-
-/* Rodapé */
 footer {
     margin-top: auto;
     text-align: center;

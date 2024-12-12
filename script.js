@@ -7,47 +7,6 @@ function atualizarCarrinho() {
     document.getElementById("quantidadeItens").innerText = quantidadeItens;
 }
 
-// Adicionar aos favoritos
-document.querySelectorAll('.favoritar').forEach(button => {
-    button.addEventListener('click', function () {
-        const produto = this.closest('.produto');
-        const nome = produto.getAttribute('data-nome');
-        const preco = parseFloat(produto.getAttribute('data-preco'));
-
-        if (!favoritos.some(item => item.nome === nome)) {
-            favoritos.push({ nome, preco });
-            atualizarListaFavoritos();
-        }
-    });
-});
-
-// Atualizar lista de favoritos
-function atualizarListaFavoritos() {
-    const container = document.getElementById("favoritosContainer");
-    container.innerHTML = "";
-
-    favoritos.forEach(favorito => {
-        const div = document.createElement("div");
-        div.classList.add("favorito-item");
-        div.innerHTML = `
-            <span>${favorito.nome} - R$${favorito.preco.toFixed(2)}</span>
-            <button class="removerFavorito">❌</button>
-        `;
-        div.querySelector(".removerFavorito").addEventListener("click", () => {
-            favoritos = favoritos.filter(item => item.nome !== favorito.nome);
-            atualizarListaFavoritos();
-        });
-
-        container.appendChild(div);
-    });
-}
-
-// Mostrar/Esconder favoritos
-document.getElementById("abrirFavoritos").addEventListener("click", () => {
-    const listaFavoritos = document.getElementById("listaFavoritos");
-    listaFavoritos.style.display = listaFavoritos.style.display === "none" ? "block" : "none";
-});
-
 // Comprar Agora
 document.querySelectorAll('.comprarAgora').forEach(button => {
     button.addEventListener('click', function () {
